@@ -17,3 +17,8 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
   - Let's see how long this takes me
   - Course stated 2.5 hours (I am slow however)
 * 
+
+### Progress
+* took about 45 minutes to get through all project setup
+    - that included alot though, git repos, readme notes, flow, jest, storybook setup, adding any other npm packages to the meteor project, and viewing the first course
+* 
