@@ -8,13 +8,9 @@
     "url": "https://github.com/sjm-practice/reduxstagram.git"
   },
   "keywords": [
-    "meteor",
     "react",
-    "jest",
-    "storybook",
-    "flow",
-    "yarn",
-    "eslint"
+    "redux",
+    "react router"
   ],
   "author": "Steve Marsh",
   "license": "MIT",
