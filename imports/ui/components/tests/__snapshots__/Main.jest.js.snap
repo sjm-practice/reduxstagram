@@ -1,0 +1,11 @@
+exports[`<Main /> matches render snapshot 1`] = `
+<div>
+  <h1>
+    <a
+      onClick={[Function]}
+      style={Object {}}>
+      Reduxstagram
+    </a>
+  </h1>
+</div>
+`;
