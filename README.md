@@ -16,7 +16,9 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
 * Starting at 4pm on Wednesday 3/8/17
   - Let's see how long this takes me
   - Course stated 2.5 hours (I am slow however)
-* 
+* Flowtype, for the Main component, children should be a required prop, but flow throws an error when not seeing 'children' as an explicit 'prop'
+    - the work around is to make children an optional prop
+    - this may be an issue with [Flow](https://github.com/facebook/flow/issues/1964)
 
 ### Progress
 * took about 45 minutes to get through all project setup

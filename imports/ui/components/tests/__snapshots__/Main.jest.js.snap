@@ -6,6 +6,11 @@ exports[`<Main /> matches render snapshot 1`] = `
       style={Object {}}>
       Reduxstagram
     </a>
+    <p>
+      <p>
+        test child element
+      </p>
+    </p>
   </h1>
 </div>
 `;

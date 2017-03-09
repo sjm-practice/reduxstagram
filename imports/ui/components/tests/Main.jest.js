@@ -9,7 +9,7 @@ import Main from "../Main";
 
 describe("<Main />", function () {
   it("matches render snapshot", function () {
-    const tree = renderer.create(<Main />).toJSON();
+    const tree = renderer.create(<Main><p>test child element</p></Main>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

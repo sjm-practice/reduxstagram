@@ -8,7 +8,7 @@ class PhotoGrid extends Component {
   render() {
     return (
       <div className="photo-grid">
-      photo grid
+        photo grid
       </div>
     );
   }
