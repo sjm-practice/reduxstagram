@@ -2,4 +2,5 @@
 
 declare module "react-router-redux" {
   declare export function syncHistoryWithStore(history: Object, store: Object): Object;
+  declare export function routerReducer(): Object;
 }

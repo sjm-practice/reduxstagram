@@ -7,9 +7,7 @@ exports[`<Main /> matches render snapshot 1`] = `
       Reduxstagram
     </a>
     <p>
-      <p>
-        test child element
-      </p>
+      test child element
     </p>
   </h1>
 </div>
