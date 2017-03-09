@@ -10,7 +10,9 @@
   "keywords": [
     "react",
     "redux",
-    "react router"
+    "react router",
+    "jest",
+    "flow"
   ],
   "author": "Steve Marsh",
   "license": "MIT",
@@ -28,8 +30,7 @@
     "pretest": "yarn run lint && yarn run flow:check",
     "test": "yarn run unit-test",
     "unit-test": "jest -c .jest-config.json",
-    "unit-test-w": "yarn run unit-test -- --watchAll",
-    "storybook": "start-storybook -s ./public -p 9001 -c .storybook"
+    "unit-test-w": "yarn run unit-test -- --watchAll"
   },
   "dependencies": {
     "babel-runtime": "^6.22.0",
@@ -44,8 +45,6 @@
     "redux": "^3.6.0"
   },
   "devDependencies": {
-    "@kadira/storybook": "^2.35.3",
-    "@kadira/storybook-addon-knobs": "^1.7.1",
     "babel-eslint": "^7.1.1",
     "babel-jest": "^18.0.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
@@ -64,11 +63,8 @@
     "eslint-plugin-react": "^6.9.0",
     "flow-bin": "^0.41.0",
     "jest": "^18.1.0",
-    "less": "^2.7.2",
-    "less-loader": "^2.2.3",
     "lodash": "^4.17.4",
     "react-addons-test-utils": "^15.4.2",
-    "react-storybook-addon-backgrounds": "^0.0.7",
     "react-test-renderer": "^15.4.2",
     "style-loader": "^0.13.1"
   }
