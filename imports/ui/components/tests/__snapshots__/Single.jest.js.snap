@@ -1,0 +1,6 @@
+exports[`<Single /> matches render snapshot 1`] = `
+<div
+  className="single-photo">
+  single photo
+</div>
+`;
