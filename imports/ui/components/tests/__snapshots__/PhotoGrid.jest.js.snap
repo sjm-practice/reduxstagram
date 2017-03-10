@@ -1,8 +1,4 @@
 exports[`<PhotoGrid /> matches render snapshot 1`] = `
 <div
-  className="photo-grid">
-  <pre>
-    []
-  </pre>
-</div>
+  className="photo-grid" />
 `;

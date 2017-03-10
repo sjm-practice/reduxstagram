@@ -2,6 +2,8 @@
 import React, {
   Component,
 } from "react";
+import Photo from "./Photo";
+
 import type { IPosts } from "../../state/reducers/posts";
 
 type IProps = {
@@ -19,9 +21,14 @@ class PhotoGrid extends Component {
   render() {
     return (
       <div className="photo-grid">
-        <pre>
-          {JSON.stringify(this.props.posts, null, " ")}
-        </pre>
+        {this.props.posts.map((post, i) =>
+          <Photo
+            key={post.id}
+            index={i}
+            post={post}
+            {...this.props}
+          />)
+        }
       </div>
     );
   }

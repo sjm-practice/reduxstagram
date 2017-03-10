@@ -1,12 +1,12 @@
 // @flow
 import type { ICommentsAction } from "../actions/actionTypes";
 
-type IComment = {
+export type IComment = {
   text: string,
   user: string,
 };
 
-type IPostComments = {
+export type IPostComments = {
   [postKey: string]: Array<IComment>,
 };
 
