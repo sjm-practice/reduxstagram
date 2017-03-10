@@ -19,6 +19,12 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
 * Flowtype, for the Main component, children should be a required prop, but flow throws an error when not seeing 'children' as an explicit 'prop'
     - the work around is to make children an optional prop
     - this may be an issue with [Flow](https://github.com/facebook/flow/issues/1964)
+### Redux Steps
+* add initial actions
+* add initial reducers
+* add provider (state access via router)
+* connect store (react-redux)
+* 
 
 ### Progress
 * took about 45 minutes to get through all project setup
