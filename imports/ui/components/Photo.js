@@ -45,7 +45,7 @@ class Photo extends Component {
             <div className="control-buttons">
               <button className="likes">&hearts; {post.likes}</button>
             </div>
-            <Link to={`/view/${post.code}`}>
+            <Link to={`/view/${post.code}`} className="button">
               <span className="comment-count">
                 <span className="speech-bubble" />
                 {comments[post.code] ? comments[post.code].length : 0}
