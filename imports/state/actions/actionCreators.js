@@ -4,9 +4,13 @@ import {
   ADD_COMMENT,
   REMOVE_COMMENT,
 } from "./actionTypes";
-import type { ILikesAction, ICommentsAction } from "./actionTypes";
 
-// increment likes
+// post / likes actions
+export type ILikesAction = {
+  type: string,
+  index: string,
+};
+
 export function increment(index: string): ILikesAction {
   console.log("got to increment with:", index);
   return {
@@ -15,7 +19,15 @@ export function increment(index: string): ILikesAction {
   };
 }
 
-// add comment
+// comments actions
+export type ICommentsAction = {
+  type: string,
+  postId: string,
+  index?: string,
+  author?: string,
+  comment?: string,
+};
+
 export function addComment(postId: string, author: string, comment: string): ICommentsAction {
   return {
     type: ADD_COMMENT,
@@ -25,7 +37,6 @@ export function addComment(postId: string, author: string, comment: string): ICo
   };
 }
 
-// remove comment
 export function removeComment(postId: string, index: string): ICommentsAction {
   return {
     type: REMOVE_COMMENT,

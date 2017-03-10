@@ -1,5 +1,5 @@
 // @flow
-import type { ICommentsAction } from "../actions/actionTypes";
+import type { ICommentsAction } from "../actions/actionCreators";
 
 export type IComment = {
   text: string,

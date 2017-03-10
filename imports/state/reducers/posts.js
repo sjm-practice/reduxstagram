@@ -3,7 +3,7 @@ import {
   INCREMENT_LIKES,
 } from "../actions/actionTypes";
 
-import type { ILikesAction } from "../actions/actionTypes";
+import type { ILikesAction } from "../actions/actionCreators";
 
 export type IPost = {
   code: string,
