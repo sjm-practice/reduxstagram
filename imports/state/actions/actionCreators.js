@@ -8,6 +8,7 @@ import type { ILikesAction, ICommentsAction } from "./actionTypes";
 
 // increment likes
 export function increment(index: string): ILikesAction {
+  console.log("got to increment with:", index);
   return {
     type: INCREMENT_LIKES,
     index,

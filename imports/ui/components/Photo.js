@@ -11,6 +11,7 @@ type IProps = {
   index: number,
   post: IPost,
   comments: IPostComments,
+  increment(index: number): void,
 };
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -19,7 +20,7 @@ class Photo extends Component {
 
   render() {
     // eslint-disable-next-line react/prop-types
-    const { post, index, comments } = this.props;
+    const { post, index, comments, increment } = this.props;
 
     return (
       <figure className="grid-figure">
@@ -43,7 +44,12 @@ class Photo extends Component {
           <figcaption>
             <p>{post.caption}</p>
             <div className="control-buttons">
-              <button className="likes">&hearts; {post.likes}</button>
+              <button
+                className="likes"
+                onClick={() => increment(index)}
+              >
+                &hearts; {post.likes}
+              </button>
             </div>
             <Link to={`/view/${post.code}`} className="button">
               <span className="comment-count">

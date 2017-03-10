@@ -1,4 +1,8 @@
 // @flow
+import {
+  INCREMENT_LIKES,
+} from "../actions/actionTypes";
+
 import type { ILikesAction } from "../actions/actionTypes";
 
 export type IPost = {
@@ -15,8 +19,15 @@ function posts(
   state: IPosts = [],
   action: ILikesAction,
 ): IPosts {
-  console.log(state, action);  // eslint-disable-line no-console
-  return state;
+  switch (action.type) {
+    case INCREMENT_LIKES:
+      console.log("incrementing!");
+      return state;
+
+    default:
+      console.log("got something else mofo.", action);
+      return state;
+  }
 }
 
 export default posts;

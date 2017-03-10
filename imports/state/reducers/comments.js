@@ -14,8 +14,10 @@ function comments(
   state: IPostComments = {},
   action: ICommentsAction,
 ): IPostComments {
-  console.log(state, action);  // eslint-disable-line no-console
-  return state;
+  switch (action) {
+    default:
+      return state;
+  }
 }
 
 export default comments;
