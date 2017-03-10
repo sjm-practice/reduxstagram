@@ -6,7 +6,6 @@ import Photo from "./Photo";
 
 import type { IPosts } from "../../state/reducers/posts";
 
-// notes
 type IProps = {
   posts: IPosts,
 };
