@@ -1,5 +1,5 @@
 // @flow
-import type { ILikesAction } from "../actions/actionCreators";
+import type { ILikesAction } from "../actions/actionTypes";
 
 type IPost = {
   code: string,
@@ -9,7 +9,7 @@ type IPost = {
   display_src: string,
 };
 
-export type IPosts = Array<IPost>;
+type IPosts = Array<IPost>;
 
 function posts(
   state: IPosts = [],

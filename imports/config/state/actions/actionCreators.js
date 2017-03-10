@@ -4,11 +4,7 @@ import {
   ADD_COMMENT,
   REMOVE_COMMENT,
 } from "./actionTypes";
-
-export type ILikesAction = {
-  type: string,
-  index: string,
-};
+import type { ILikesAction, ICommentsAction } from "./actionTypes";
 
 // increment likes
 export function increment(index: string): ILikesAction {
@@ -17,14 +13,6 @@ export function increment(index: string): ILikesAction {
     index,
   };
 }
-
-export type ICommentsAction = {
-  type: string,
-  postId: string,
-  index?: string,
-  author?: string,
-  comment?: string,
-};
 
 // add comment
 export function addComment(postId: string, author: string, comment: string): ICommentsAction {
