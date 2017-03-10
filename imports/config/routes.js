@@ -6,7 +6,7 @@ import {
   IndexRoute,
 } from "react-router";
 import { Provider } from "react-redux";
-import store, { history } from "./state/stores/store";
+import store, { history } from "../state/stores/store";
 
 import App from "../ui/components/App";
 import Single from "../ui/components/Single";

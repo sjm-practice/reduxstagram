@@ -1,6 +1,6 @@
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import * as actionCreators from "../../config/state/actions/actionCreators";
+import * as actionCreators from "../../state/actions/actionCreators";
 
 import Main from "./Main";
 

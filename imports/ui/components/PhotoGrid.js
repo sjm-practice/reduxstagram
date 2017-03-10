@@ -2,7 +2,7 @@
 import React, {
   Component,
 } from "react";
-import type { IPosts } from "../../config/state/reducers/posts";
+import type { IPosts } from "../../state/reducers/posts";
 
 type IProps = {
   posts: IPosts,
