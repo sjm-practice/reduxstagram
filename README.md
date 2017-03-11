@@ -20,6 +20,7 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
     - the work around is to make children an optional prop
     - this may be an issue with [Flow](https://github.com/facebook/flow/issues/1964)
 * Flowtype, can a function signature be a defined type? so a function being passed in to props, could be of that type, which would declare its parameter types and return types
+
 ### Redux Steps
 * add initial actions
 * add initial reducers
@@ -31,4 +32,4 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
 * took about 45 minutes to get through all project setup
     - that included alot though, git repos, readme notes, flow, jest, storybook setup, adding any other npm packages to the meteor project, and viewing the first course
 * doing tests and flow adds a bit of time
-* punting on storybook (needed stylus webpack configuring. not.) 
+* punting on storybook (needed stylus webpack configuring. not.)
