@@ -1,3 +1,4 @@
+// @flow
 /* eslint-env jest */
 /* eslint-disable func-names, prefer-arrow-callback, no-unused-expressions */
 /* eslint-disable import/no-extraneous-dependencies */
@@ -14,6 +15,21 @@ describe("actions", function () {
     it("should have action type of INCREMENT_LIKES", function () {
       expect(actionCreators.increment(1).type).toEqual(INCREMENT_LIKES);
     });
+
+    it("should return the index we pass it", function () {
+      expect(actionCreators.increment(1).index).toEqual(1);
+    });
   });
 
+  describe("addComment", function () {
+    it("should have action type of ADD_COMMENT", function () {
+      expect(actionCreators.addComment("id", "author", "comment").type).toEqual(ADD_COMMENT);
+    });
+  });
+
+  describe("removeComment", function () {
+    it("should have action type of REMOVE_COMMENT", function () {
+      expect(actionCreators.removeComment("id", 1).type).toEqual(REMOVE_COMMENT);
+    });
+  });
 });

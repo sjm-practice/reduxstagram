@@ -19,6 +19,7 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
 * Flowtype, for the Main component, children should be a required prop, but flow throws an error when not seeing 'children' as an explicit 'prop'
     - the work around is to make children an optional prop
     - this may be an issue with [Flow](https://github.com/facebook/flow/issues/1964)
+* Flowtype, can a function signature be a defined type? so a function being passed in to props, could be of that type, which would declare its parameter types and return types
 ### Redux Steps
 * add initial actions
 * add initial reducers

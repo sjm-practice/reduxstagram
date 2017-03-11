@@ -8,10 +8,10 @@ import {
 // post / likes actions
 export type ILikesAction = {
   type: string,
-  index: string,
+  index: number,
 };
 
-export function increment(index: string): ILikesAction {
+export function increment(index: number): ILikesAction {
   console.log("got to increment with:", index);
   return {
     type: INCREMENT_LIKES,
@@ -23,7 +23,7 @@ export function increment(index: string): ILikesAction {
 export type ICommentsAction = {
   type: string,
   postId: string,
-  index?: string,
+  index?: number,
   author?: string,
   comment?: string,
 };
@@ -37,7 +37,7 @@ export function addComment(postId: string, author: string, comment: string): ICo
   };
 }
 
-export function removeComment(postId: string, index: string): ICommentsAction {
+export function removeComment(postId: string, index: number): ICommentsAction {
   return {
     type: REMOVE_COMMENT,
     postId,

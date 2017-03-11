@@ -6,12 +6,13 @@ import { Link } from "react-router";
 import CSSTransitionGroup from "react-addons-css-transition-group";
 import type { IPost } from "../../state/reducers/posts";
 import type { IPostComments } from "../../state/reducers/comments";
+import type { ILikesAction } from "../../state/actions/actionCreators";
 
 type IProps = {
   index: number,
   post: IPost,
   comments: IPostComments,
-  increment(index: number): void,
+  increment(index: number): ILikesAction, // TODO can a function signature be a defined type?
 };
 
 // eslint-disable-next-line react/prefer-stateless-function
