@@ -3,6 +3,7 @@ import React, {
   Component,
 } from "react";
 import Photo from "./Photo";
+import Comments from "./Comments";
 import type { IPosts } from "../../state/reducers/posts";
 
 type IProps = {
@@ -20,6 +21,7 @@ class Single extends Component {
     return (
       <div className="single-photo">
         <Photo index={i} post={post} {...this.props} />
+        <Comments />
       </div>
     );
   }
