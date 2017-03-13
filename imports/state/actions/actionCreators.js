@@ -12,7 +12,6 @@ export type ILikesAction = {
 };
 
 export function increment(index: number): ILikesAction {
-  console.log("got to increment with:", index);
   return {
     type: INCREMENT_LIKES,
     index,
