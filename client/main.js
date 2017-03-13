@@ -1,10 +1,11 @@
+// @flow
 import { Meteor } from "meteor/meteor";
 import { render } from "react-dom";
 
 /* global document */
 
-import Routes from "../imports/config/Routes";
+import router from "../imports/config/routes";
 
 Meteor.startup(() => {
-  render(Routes, document.getElementById("render-target"));
+  render(router, document.getElementById("render-target"));
 });
