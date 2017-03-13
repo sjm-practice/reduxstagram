@@ -9,7 +9,7 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
   - [Testing your app with Jest](http://academy.plot.ly/react/6-testing/)
 * Practice with Flow & Redux
   - [Redux and Flowtype](https://medium.com/@cdebotton/redux-and-flowtype-69ff1dd09036#.evfqvps8d)
-  - [Flow: Type Checking wiht Flow in React + Redux](https://www.robinwieruch.de/the-soundcloud-client-in-react-redux-flow/)
+  - [Flow: Type Checking with Flow in React + Redux](https://www.robinwieruch.de/the-soundcloud-client-in-react-redux-flow/)
 
 ## Notes
 * Using my [meteor-react-bp](https://github.com/stevenjmarsh/meteor-react-bp) to begin the project (instead of the course's webpack setup)
@@ -26,7 +26,6 @@ A Wes Bos [course](https://learnredux.com/account/access/58c06f62a811657a91a60dd
 * add initial reducers
 * add provider (state access via router)
 * connect store (react-redux)
-* 
 
 ### Progress
 * took about 45 minutes to get through all project setup
